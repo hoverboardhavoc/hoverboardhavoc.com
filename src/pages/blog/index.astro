@@ -55,19 +55,19 @@ const posts = (await getCollection('blog')).sort(
 			}
 			.title {
 				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
+				color: var(--text);
+				line-height: 1.2;
 			}
 			.date {
 				margin: 0;
-				color: rgb(var(--gray));
+				color: var(--text-muted);
 			}
 			ul li a:hover h4,
 			ul li a:hover .date {
-				color: rgb(var(--accent));
+				color: var(--neon-bright);
 			}
 			ul a:hover img {
-				box-shadow: var(--box-shadow);
+				box-shadow: 0 8px 30px rgba(255, 90, 0, 0.18), 0 0 0 1px rgba(47, 211, 240, 0.3);
 			}
 			@media (max-width: 720px) {
 				ul {

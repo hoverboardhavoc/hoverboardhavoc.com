@@ -1,0 +1,64 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`404 · ${SITE_TITLE}`} description="Page not found." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="notfound">
+				<p class="code flame-text">404</p>
+				<h1>This one burned out.</h1>
+				<p class="msg">
+					The page you're after doesn't exist, caught fire, or rolled off on a hoverboard.
+				</p>
+				<div class="links">
+					<a href="/">Back to the blog</a>
+					<a href="/about/">About</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.notfound {
+		text-align: center;
+		padding: 3em 0 4em;
+	}
+	.code {
+		font-size: 7rem;
+		font-weight: 800;
+		line-height: 1;
+		margin: 0;
+		letter-spacing: 0.02em;
+	}
+	.notfound h1 {
+		font-size: 2rem;
+		margin: 0.3em 0 0.4em;
+	}
+	.msg {
+		color: var(--text-muted);
+		max-width: 42ch;
+		margin: 0 auto 2em;
+	}
+	.links {
+		display: flex;
+		gap: 1.5em;
+		justify-content: center;
+		font-weight: 700;
+	}
+	@media (max-width: 600px) {
+		.code {
+			font-size: 5rem;
+		}
+	}
+</style>
