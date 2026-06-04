@@ -1,3 +1,6 @@
+# local-only asset staging (originals may contain EXIF/GPS; never commit)
+incoming/
+
 # build output
 dist/
 # generated types
