@@ -71,6 +71,20 @@ The firmware needs a throttle source to test drive and steer commands, and e-sco
 <p style="margin:0;line-height:1.7;"><strong><a href="https://s.click.aliexpress.com/e/_c4eoJpOl">ESP32-C3 SuperMini</a></strong> (~247 kr · $25 / €22 / £19, multi-pack). The same part that already rides on each board as the wireless SWD probe.</p>
 </div>
 
+## RS485 sniffer
+
+I want a microcontroller with **two RS485 ports** to passively watch both directions of a 4-wire RS485 link on an RTK GPS. The obvious option, a Raspberry Pi RS485 CAN HAT, has two RS485 channels but drags a whole Pi along. A genuine two-port *microcontroller* board is rare (almost every "ESP32 RS485" board is one RS485 plus a CAN), but the Pico carrier below is a clean fit: two SP3485 transceivers on the Pico's two independent hardware UARTs (GP0/1 and GP4/5), exactly what a full-duplex tap needs. It is not isolated, which is fine for a low-voltage bench tap.
+
+<div style="display:flex;gap:1.25rem;align-items:center;margin:2rem 0;">
+<a href="https://s.click.aliexpress.com/e/_c4oSDzJf" style="flex:none;"><img src="/parts/rs485-pico-board.jpg" alt="Pico-2CH-RS485 dual RS485 module for Raspberry Pi Pico" width="120" style="border-radius:6px;display:block;"></a>
+<p style="margin:0;line-height:1.7;"><strong><a href="https://s.click.aliexpress.com/e/_c4oSDzJf">Pico-2CH-RS485 board</a></strong> (~109 kr · $11 / €9.8 / £8.5). The RS485 front-end: two SP3485 transceivers wired to the Pico's two UARTs. You supply the Pico.</p>
+</div>
+
+<div style="display:flex;gap:1.25rem;align-items:center;margin:2rem 0;">
+<a href="https://s.click.aliexpress.com/e/_c3ttm3el" style="flex:none;"><img src="/parts/pico-2w.jpg" alt="Raspberry Pi Pico 2 W development board" width="120" style="border-radius:6px;display:block;"></a>
+<p style="margin:0;line-height:1.7;"><strong><a href="https://s.click.aliexpress.com/e/_c3ttm3el">Raspberry Pi Pico 2 W</a></strong> (~119 kr · $12 / €11 / £9.3). The brain that plugs into it. The W adds WiFi, handy for streaming captured traffic off the bench.</p>
+</div>
+
 ## Untested, for now
 
 None of these are tested yet, they are just what I am ordering. Once they arrive and I have put them to work on the bench, I will report back on how well each one actually holds up.
