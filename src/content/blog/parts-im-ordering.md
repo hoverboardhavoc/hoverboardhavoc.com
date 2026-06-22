@@ -5,7 +5,7 @@ pubDate: 'Jun 22 2026'
 heroImage: '../../assets/shopping-list-hero.jpg'
 ---
 
-A batch of parts is going into the cart for the hoverboard firmware bring-up. These are not recommendations I am handing down from on high, they are the things I am actually about to buy for the bench. The links are affiliate links (if you buy through one I get a small AliExpress commission at no extra cost to you), and I am ordering all of these for myself. The photos are the sellers' listing images. Prices are as of **22 June 2026** (NOK from the listings, the others converted at that day's rate), and AliExpress prices move around a lot.
+A batch of parts is going into the cart for the hoverboard firmware bring-up. These are not recommendations I am handing down from on high, they are the things I am actually about to buy for the bench. The links are affiliate links (if you buy through one I get a small AliExpress commission at no extra cost to you), and I am ordering all of these for myself, except the Raspberry Pi Pico 2 W at the end, which I already have. The photos are the sellers' listing images. Prices are as of **22 June 2026** (NOK from the listings, the others converted at that day's rate), and AliExpress prices move around a lot.
 
 ## Power
 
@@ -82,7 +82,7 @@ I want a microcontroller with **two RS485 ports** to passively watch both direct
 
 <div style="display:flex;gap:1.25rem;align-items:center;margin:2rem 0;">
 <a href="https://s.click.aliexpress.com/e/_c3ttm3el" style="flex:none;"><img src="/parts/pico-2w.jpg" alt="Raspberry Pi Pico 2 W development board" width="120" style="border-radius:6px;display:block;"></a>
-<p style="margin:0;line-height:1.7;"><strong><a href="https://s.click.aliexpress.com/e/_c3ttm3el">Raspberry Pi Pico 2 W</a></strong> (~119 kr · $12 / €11 / £9.3). The brain that plugs into it. The W adds WiFi, handy for streaming captured traffic off the bench.</p>
+<p style="margin:0;line-height:1.7;"><strong><a href="https://s.click.aliexpress.com/e/_c3ttm3el">Raspberry Pi Pico 2 W</a></strong> (~119 kr · $12 / €11 / £9.3). The brain that plugs into it; the W adds WiFi for streaming captures off the bench. I already have one, so this is the only thing here I am not buying, linked for anyone building along.</p>
 </div>
 
 ## Untested, for now
