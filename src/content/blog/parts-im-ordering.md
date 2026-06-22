@@ -71,6 +71,15 @@ The firmware needs a throttle source to test drive and steer commands, and e-sco
 <p style="margin:0;line-height:1.7;"><strong><a href="https://s.click.aliexpress.com/e/_c4eoJpOl">ESP32-C3 SuperMini</a></strong> (~247 kr · $25 / €22 / £19, multi-pack). The same part that already rides on each board as the wireless SWD probe.</p>
 </div>
 
+## Display
+
+The **Cheap Yellow Display** (the ESP32-2432S028R, "CYD"): an ESP32-WROOM with a 2.8" 320×240 resistive touchscreen on a yellow PCB. A whole community has grown up around it (Brian Lough's [ESP32-Cheap-Yellow-Display](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display), LVGL examples everywhere), which makes it the easy path to a little touch UI, a config screen, or a bench status readout.
+
+<div style="display:flex;gap:1.25rem;align-items:center;margin:2rem 0;">
+<a href="https://s.click.aliexpress.com/e/_c3aAzeoN" style="flex:none;"><img src="/parts/cyd.jpg" alt="ESP32-2432S028R Cheap Yellow Display, 2.8 inch touchscreen" width="120" style="border-radius:6px;display:block;"></a>
+<p style="margin:0;line-height:1.7;"><strong><a href="https://s.click.aliexpress.com/e/_c3aAzeoN">Cheap Yellow Display (ESP32-2432S028R)</a></strong> (~150 kr · $15 / €13 / £12). 2.8" 320×240 ILI9341 resistive touch, microSD, ESP32-WROOM. Get the single-USB board; the dual-USB variant has driver quirks.</p>
+</div>
+
 ## RS485 sniffer
 
 I want a microcontroller with **two RS485 ports** to passively watch both directions of a 4-wire RS485 link on an RTK GPS. The obvious option, a Raspberry Pi RS485 CAN HAT, has two RS485 channels but drags a whole Pi along. A genuine two-port *microcontroller* board is rare (almost every "ESP32 RS485" board is one RS485 plus a CAN), but the Pico carrier below is a clean fit: two SP3485 transceivers on the Pico's two independent hardware UARTs (GP0/1 and GP4/5), exactly what a full-duplex tap needs. It is not isolated, which is fine for a low-voltage bench tap.
