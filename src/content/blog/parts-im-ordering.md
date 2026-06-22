@@ -37,12 +37,12 @@ For bench work where I want a current limit while bringing up a power stage:
 
 <div style="display:flex;gap:1.25rem;align-items:center;margin:2rem 0;">
 <a href="https://s.click.aliexpress.com/e/_c2wZ2EXb" style="flex:none;"><img src="/parts/dupont-kit.jpg" alt="40-pin Dupont jumper wire kit" width="120" style="border-radius:6px;display:block;"></a>
-<p style="margin:0;line-height:1.7;"><strong><a href="https://s.click.aliexpress.com/e/_c2wZ2EXb">Dupont jumper wire kit, 40-pin, M-M / M-F / F-F</a></strong> (~30 kr · $3.1 / €2.7 / £2.4).</p>
+<p style="margin:0;line-height:1.7;"><strong><a href="https://s.click.aliexpress.com/e/_c2wZ2EXb">Dupont jumper wire kit, 40-pin, M-M / M-F / F-F</a></strong> (~30 kr · $3.1 / €2.7 / £2.4). The listing has a gender option, so choose the female-to-female (F2F) variant, for jumping between the boards' male pin headers.</p>
 </div>
 
 <div style="display:flex;gap:1.25rem;align-items:center;margin:2rem 0;">
 <a href="https://s.click.aliexpress.com/e/_c3bp5B3P" style="flex:none;"><img src="/parts/dupont-short.jpg" alt="Short 5cm Dupont breadboard jumper wires" width="120" style="border-radius:6px;display:block;"></a>
-<p style="margin:0;line-height:1.7;"><strong><a href="https://s.click.aliexpress.com/e/_c3bp5B3P">Short 5cm Dupont breadboard jumpers, 26AWG</a></strong> (~26 kr · $2.7 / €2.3 / £2.0). For keeping the bench tidy.</p>
+<p style="margin:0;line-height:1.7;"><strong><a href="https://s.click.aliexpress.com/e/_c3bp5B3P">Short 5cm Dupont breadboard jumpers, 26AWG</a></strong> (~26 kr · $2.7 / €2.3 / £2.0). For keeping the bench tidy; choose the female-to-female variant here too.</p>
 </div>
 
 ## Drive input
