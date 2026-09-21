@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build with Astro
-        uses: withastro/action@v4
+        uses: withastro/action@v6
   deploy:
     needs: build
     runs-on: ubuntu-latest

@@ -56,7 +56,7 @@ function excerpt(body = '', max = 230) {
 									<FormattedDate date={post.data.pubDate} />
 								</p>
 								<p class="excerpt">
-									{excerpt(post.body)}
+									{excerpt(post.body)}{' '}
 									<a class="read-more" href={`/blog/${post.id}/`}>
 										…read more
 									</a>
