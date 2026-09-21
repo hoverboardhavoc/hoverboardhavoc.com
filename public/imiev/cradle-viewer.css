@@ -1,0 +1,102 @@
+/* Live OpenSCAD viewer block for the cradle post. Colours come from the
+   site's variables (global.css); the mesh colours live in cradle-viewer.js. */
+
+.scad-viewer {
+	margin: 0 0 2em;
+}
+
+/* The live button only appears once the precomputed model is on screen. */
+.scad-viewer:not(.is-ready) .scad-viewer-start {
+	display: none;
+}
+.scad-viewer-start {
+	font: inherit;
+	font-size: 0.95em;
+	color: var(--text);
+	background: var(--bg-elevated);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	padding: 0.6em 1em;
+	cursor: pointer;
+	transition: color 0.15s ease, border-color 0.15s ease;
+}
+.scad-viewer-start:hover,
+.scad-viewer-start:focus-visible {
+	color: var(--neon-bright);
+	border-color: var(--neon);
+}
+
+.scad-viewer-stage {
+	width: 100%;
+	height: min(60vw, 480px);
+	background: var(--bg);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	overflow: hidden;
+	touch-action: none;
+}
+.scad-viewer-stage canvas {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
+}
+
+.scad-viewer p.scad-viewer-status {
+	margin: 0.5em 0 0;
+	min-height: 1.4em;
+	font-size: 0.9em;
+	color: var(--text-muted);
+}
+
+.scad-viewer-controls {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.75em 1.5em;
+	margin-top: 0.75em;
+	font-size: 0.9em;
+	color: var(--text-muted);
+}
+.scad-viewer-controls label {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5em;
+	cursor: pointer;
+}
+.scad-viewer-controls input[type='range'] {
+	width: 11em;
+	max-width: 45vw;
+	accent-color: var(--flame-2);
+}
+.scad-viewer-controls .scad-viewer-start {
+	font-size: 1em;
+	padding: 0.4em 0.8em;
+}
+.scad-viewer-controls input[type='checkbox'] {
+	accent-color: var(--flame-2);
+}
+.scad-viewer-jack-value {
+	min-width: 4em;
+	color: var(--text);
+	font-variant-numeric: tabular-nums;
+}
+
+.scad-viewer-checks {
+	margin-top: 0.75em;
+	font-size: 0.9em;
+	color: var(--text-muted);
+}
+.scad-viewer-checks summary {
+	cursor: pointer;
+}
+.scad-viewer-checks pre {
+	margin: 0.5em 0 0;
+	padding: 1em;
+	font-size: 0.8em;
+	line-height: 1.4;
+	white-space: pre;
+	overflow-x: auto;
+	color: var(--text);
+	background: var(--bg-code);
+}
