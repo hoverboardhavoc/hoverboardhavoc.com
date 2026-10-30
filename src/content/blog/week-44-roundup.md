@@ -5,6 +5,8 @@ pubDate: 'Oct 30 2026'
 heroImage: '../../assets/week44/heater-block.jpg'
 ---
 
+One of four jobs done, the pole bush, and one partly: the rover balances on new motor control firmware. The phone mount's first test print came after four failed attempts, and the telemetry tidy-up did not happen.
+
 [The plan for this week](/blog/week-44-the-plan/) had four jobs:
 
 1. Pole bush. ✅
